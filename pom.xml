@@ -3,6 +3,41 @@
   <groupId>com.devefx</groupId>
   <artifactId>GameServer</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <name>org.devefx.GameServer</name>
+  <url>https://github.com/devefx/GameServer</url>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+  <licenses>
+    <license>
+      <name>The Devefx License, Version 1.0</name>
+      <url>http://www.devefx.com/licenses/LICENSE-1.0.txt</url>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <name>yueyouqian</name>
+      <email>devefx@163.com</email>
+      <organization>devefx</organization>
+      <organizationUrl>http://www.devefx.com</organizationUrl>
+    </developer>
+  </developers>
+  <scm>
+    <connection>scm:https://github.com/devefx/GameServer.git</connection>
+    <developerConnection>scm:https://github.com/devefx/GameServer.git</developerConnection>
+    <url>scm:https://github.com/devefx/GameServer.git</url>
+    <tag>v1.0.0</tag>
+  </scm>
+  <distributionManagement>
+    <snapshotRepository>
+      <id>ossrh</id>
+      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+    </snapshotRepository>
+    <repository>
+      <id>ossrh</id>
+      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+    </repository>
+  </distributionManagement>
   <dependencies>
     <dependency>
       <groupId>com.devefx</groupId>
