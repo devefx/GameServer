@@ -7,18 +7,17 @@
 		http://www.springframework.org/schema/context 
 		http://www.springframework.org/schema/context/spring-context-3.0.xsd">
 	
-	<context:component-scan base-package="com.devefx.gameserver.handler"/>
+	<context:property-placeholder location="classpath:db.properties"/>
 	
+	<context:component-scan base-package="com.devefx.gameserver.handler"/>
 	<bean id="handlerManager" class="com.devefx.serverengine.handler.GameHandlerManager">
 		<property name="initCapacity" value="100" />
 	</bean>
-	
 	<bean id="pipelineFactory" class="com.devefx.serverengine.core.GamePipelineFactory">
 		<property name="maxFrameLength" value="10240" />
 		<property name="lengthFieldLength" value="2" />
 		<property name="handlerManager" ref="handlerManager"/>
 	</bean>
-	
 	<bean id="gameServer" class="com.devefx.gameserver.GameServer">
 		<property name="pipelineFactory" ref="pipelineFactory" />
 		<property name="port" value="3333" />
