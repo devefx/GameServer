@@ -3,7 +3,7 @@
   <groupId>com.devefx</groupId>
   <artifactId>GameServer</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <name>org.devefx.GameServer</name>
+  <name>com.devefx.GameServer</name>
   <url>https://github.com/devefx/GameServer</url>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
